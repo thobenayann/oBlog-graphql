@@ -1,0 +1,24 @@
+{
+  "name": "oblog-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thobenayann/oBlog-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thobenayann/oBlog-graphql/issues"
+  },
+  "homepage": "https://github.com/thobenayann/oBlog-graphql#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.23.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  }
+}
