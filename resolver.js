@@ -8,7 +8,8 @@ module.exports = {
         // pour lui expliquer comment répondre à cette demande
         // je fais une fonction
         async categories() {
-            return await client.query('SELECT * FROM category');
+            const result = await client.query('SELECT * FROM category');
+            return result.rows;
         }
     }
 }
