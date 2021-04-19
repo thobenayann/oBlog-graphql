@@ -1,4 +1,4 @@
-const { gql } = require('appolo-server-express');
+const { gql } = require('apollo-server-express');
 
 const schema = gql`
 # Ceci est le schéma de représentation de nos données.
