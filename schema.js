@@ -45,7 +45,19 @@ type Category {
 # Le type Query
 # Il s'agira des points d'entrée pour demander des données
 type Query {
+    "Renvoi toutes les catégories du site"
     categories: [Category]
+
+    "Renvoi un poste par son ID"
+    post(id: ID!): Post
+}
+
+# Les mutations sont les requêtes d'écriture de graphQL (création modification suppression)
+type Mutation {
+    # Les mutations renvoient aussi des données
+    insertPost(slug: String!, title: String!, category_id: ID!): Post
+    # Il est possible de définir un type custom pour éviter de passer tt les param. un à un
+    # https://graphql.org/graphql-js/mutations-and-input-types/
 }
 `;
 

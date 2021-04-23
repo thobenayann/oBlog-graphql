@@ -1,3 +1,7 @@
+// La différence entre le dataMapper et le dataSource
+// C'est qu'il s'agit d'une classe
+// La logique est de ne pas faire nos requires nous même
+// On laisse un gestionnaire le faire à notre place
 const { Pool } = require('pg');
 
 const pool = new Pool();
