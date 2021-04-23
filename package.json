@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/thobenayann/oBlog-graphql#readme",
   "dependencies": {
+    "apollo-datasource": "^0.8.0",
     "apollo-server-express": "^2.23.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

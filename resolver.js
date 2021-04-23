@@ -1,4 +1,4 @@
-const client = require('./dataMapper/client');
+const client = require('./dataSource/client');
 
 module.exports = {
     // On suit ici la structure du schéma
