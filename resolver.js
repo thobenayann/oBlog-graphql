@@ -20,6 +20,10 @@ module.exports = {
     Mutation: {
         async insertPost(_, args, context) {
             return await context.dataSources.post.insertPost(args);
+        },
+
+        async deletePost(_, args, context) {
+            return await context.dataSources.post.deletePost(args.id);
         }
     },
 

@@ -55,9 +55,10 @@ type Query {
 # Les mutations sont les requêtes d'écriture de graphQL (création modification suppression)
 type Mutation {
     # Les mutations renvoient aussi des données
-    insertPost(slug: String!, title: String!, category_id: ID!): Post
+    insertPost(slug: String!, title: String!, category_id: ID!, content: String): Post
     # Il est possible de définir un type custom pour éviter de passer tt les param. un à un
     # https://graphql.org/graphql-js/mutations-and-input-types/
+    deletePost(id: ID!): Post
 }
 `;
 

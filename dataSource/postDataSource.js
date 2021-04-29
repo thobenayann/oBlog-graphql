@@ -51,6 +51,11 @@ class PostDataSource extends DataSource {
         return savedPost.rows[0];
     }
 
+    async deletePost(postId) {
+        const deletedPost = await this.client.query(`DELETE FROM post WHERE id = $1 RETURNING *`, [postId]);
+        return deletedPost.rows[0];
+    }
+
     // Si je recois [4, 3, 5]
     postsByCategoryLoader = new DataLoader(async (ids) => {
         console.log('Running batch function postsByCategoryLoader with', ids);
