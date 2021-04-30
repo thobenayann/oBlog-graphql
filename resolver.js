@@ -14,6 +14,10 @@ module.exports = {
         // le second paramètre correspond aux arguments passés à mon point d'entrée
         async post(_, args, context) {
             return await context.dataSources.post.findPostById(args.id);
+        },
+
+        async posts(_, __, context) {
+            return await context.dataSources.post.findAllPosts();
         }
     },
 

@@ -48,6 +48,8 @@ type Query {
     "Renvoi toutes les catégories du site"
     categories: [Category]
 
+    posts: [Post]
+
     "Renvoi un poste par son ID"
     post(id: ID!): Post
 }
